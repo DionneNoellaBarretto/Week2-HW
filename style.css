@@ -14,6 +14,10 @@
   body {
     margin: 10;
   }
+  marquee p {
+    color: red;
+  }
+
   header {
     display: flex;
     align-items: baseline;
@@ -29,60 +33,35 @@
     display: inline-flex;
     justify-content: flex-end;
   }
-  .nav-links {
-    color:var(--project_container);
-    font-size: large;
-    font-weight: 600;
-    text-decoration: none;
+  
+ /*ID Selectors*/
+  #about-me, footer{
+    display: flex;
+    align-items:flex-start
+    height: 100%;
   }
- 
+   
   #my-name {
     padding: 15px 10px 15px 25px;
     background-color:var(--project_container);
     color: var(--background);
     border-radius: 0 15px 15px 0;
   }
-  .container .quote {
-    color:var(--project_container);
-    margin: 25px;
-    border-right: 3px solid var(--project_container);
-    text-align: right;
-    height: 100px;
-    justify-content:flex-end;
-      }
 
-  footer {
-    display: flex;
-    border-right: 15px solid var(--project_container);
-    width: 15%;
-   
-  }
-  
- /*ID Selectors*/
-  #about-me{
-    display: flex;
-    align-items:flex-start
-    height: 100%;
-    justify-content: flex-start;
-  }
-  #about-me h2 {
+
+  #about-me h2, #work {
     border-right: 15px solid var(--project_container);
     width: 15%;
     text-align: right;
     align-items: center;
     padding: 15px 15px 20px 20px;
   }
-  #about-me p {
+
+  #about-me p, .contact-info {
     width: 70%;
     margin: 15px;
     text-align: center;
     padding: 25px;
-  }
-  #contact-me{
-    display: flex;
-    padding: 25px;
-    height: 100%;
-    justify-content: flex-start;
   }
 
     /* Class Selectors */
@@ -103,6 +82,22 @@
         justify-content:center;
       }
 
+      .container .quote {
+        color:var(--project_container);
+        margin: 25px;
+        border-right: 3px solid var(--project_container);
+        text-align: right;
+        height: 100px;
+        justify-content:flex-end;
+      }
+      
+      .nav-links {
+        color:var(--project_container);
+        font-size: large;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
   .main-project {
     background-image: url(./1st\ project.png);
     background-size: cover;
@@ -117,7 +112,7 @@
     z-index: 1;
     cursor: pointer;
   }
-  .one {
+  .LED_Wall {
     background-image: url(./2nd\ project.png);
     background-size: cover;
     width: 35%;
@@ -125,7 +120,7 @@
     display: flex;
     align-items: flex-end;
   }
-  .two {
+  .Calculator {
     background-image: url(./3rd\ project.png);
     background-size: cover;
     width: 35%;
@@ -133,7 +128,7 @@
     display: flex;
     align-items: flex-end;
   }
-  .three {
+  .PastelPuzzles {
     background-image: url(./4th\ project.png);
     background-size: cover;
     width: 35%;
@@ -141,7 +136,7 @@
     display: flex;
     align-items: flex-end;
   }
-  .four {
+  .RunBuddy {
     background-image: url(./5th\ project.png);
     background-size: cover;
     width: 35%;
@@ -149,17 +144,13 @@
     display: flex;
     align-items: flex-end;
   }
-  #work {
-    display: flex;
-    width: 100%;
-  }
 
   .projects {
     width: 60%;
+    margin: 40px;
     padding-left: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
   
   .main-project {
